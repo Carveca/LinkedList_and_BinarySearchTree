@@ -19,6 +19,7 @@ int main(int argc, char* argv[])
 	tester.RunTest_BinarySearchTree_Int();
 	tester.RunTest_BinarySearchTree_Float();
 
+	tester.QuitTesting();
 
 	return 0;
 }

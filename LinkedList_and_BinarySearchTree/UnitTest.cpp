@@ -26,6 +26,18 @@ void UnitTest::Pause()
 	std::cout << std::endl;
 }
 
+void UnitTest::QuitTesting()
+{
+	std::cout << std::endl;
+
+	std::cout << "Testing session finished, press Enter/Return to exit.";
+	std::cin.sync();
+	std::cin.ignore();
+
+	std::cout << std::endl;
+}
+
+
 void UnitTest::LinkedListCommands()
 {
 	std::cout << std::endl;

@@ -9,6 +9,7 @@ public:
 	~UnitTest();
 
 	void Pause();
+	void QuitTesting();
 	void LinkedListCommands();
 	void BinarySearchTreeCommands();
 
