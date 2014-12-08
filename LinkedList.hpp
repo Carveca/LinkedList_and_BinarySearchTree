@@ -114,7 +114,7 @@ public:
 			if (m_current == m_head)
 			{
 				delete m_head;
-				m_head = nullptr:
+				m_head = nullptr;
 			}
 			else
 			{
@@ -208,6 +208,8 @@ public:
 		}
 		else
 		{
+			m_current = m_head;
+
 			while (m_current != nullptr)
 			{
 				if (m_current->data == data)
@@ -225,8 +227,11 @@ public:
 	// Returns the number of nodes with data 
 	unsigned int FindRange(T data)
 	{
+		std::cout << std::endl;
+
 		if (m_head == nullptr)
 		{
+			std::cout << "No nodes in list, cannot find range" << std::endl;
 			return 0;
 		}
 		else
